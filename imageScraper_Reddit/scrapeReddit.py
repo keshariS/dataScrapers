@@ -4,13 +4,15 @@ import cv2
 import numpy as np
 import os
 import pickle
+import pandas as pd
+import datetime
 
 from utils.create_token import create_token
 
 
 
 
-POST_SEARCH_AMOUNT = 5000 # --------
+POST_SEARCH_AMOUNT = 1500 # --------
 scale_percent = 10 # percent of original image resolution (for saving the scraped image)------
 
 
@@ -26,9 +28,9 @@ def create_folder(image_path):
 
 # Path to save images
 dir_path = os.path.dirname(os.path.realpath(__file__))
-image_path = os.path.join(dir_path, "images/")
+image_path_og = os.path.join(dir_path, "scraped_images/")
 ignore_path = os.path.join(dir_path, "ignore_images/")
-create_folder(image_path)
+create_folder(image_path_og)
 
 # Get token file to log into reddit.
 # You must enter your....
@@ -52,17 +54,21 @@ reddit = praw.Reddit(client_id=creds['client_id'],
 
 f_final = open("sub_list.csv", "r") # file containing subreddits to scrape from----------
 
-
-
 img_notfound = cv2.imread('imageNF.png')
+
 for line in f_final:
     sub = line.strip()
     subreddit = reddit.subreddit(sub)
-    # image_path = os.path.join(image_path, "{sub}/") #----create separate folders for subreddits
+    image_path = os.path.join(image_path_og, f"raw_images_{sub}/")#----create separate folders for subreddits
+    create_folder(image_path)
+
+    posts = []
 
     print(f"Scraping from subreddit!: {sub}")
     count = 0
-    for submission in subreddit.top(limit=POST_SEARCH_AMOUNT):
+    for submission in subreddit.new(limit=POST_SEARCH_AMOUNT):
+        posts.append([datetime.datetime.fromtimestamp(submission.created), submission.subreddit, submission.title, submission.selftext])
+        """
         if "jpg" in submission.url.lower() or "png" in submission.url.lower():
             try:
                 resp = requests.get(submission.url.lower(), stream=True).raw
@@ -99,4 +105,7 @@ for line in f_final:
             except Exception as e:
                 print(f"Image failed. {submission.url.lower()}")
                 print(e)
+"""
+    df = pd.DataFrame(posts, columns = ['date', 'subreddit', 'title', 'text'])
+    df.to_csv('x.csv',index=False)
         
