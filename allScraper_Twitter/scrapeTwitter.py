@@ -1,10 +1,13 @@
 import twint
 
-out_dir = "/mnt/smdata/twitter/VAMoS/" #output directory for the csv files
-f = open("all_hashtags.csv", "r")
+f = open("all_hashtags.csv", "r") # input file containing list of hashtags
+out_dir = "/mnt/smdata/twitter/VAMoS/" # output directory for the scraped .csv files
+
+count = 0
 for line in f:
     h = line.strip("#\n")
-    print(f"Scraping: #{h}...")
+    count = count + 1
+    print(f"[{count}] Scraping: #{h}...")
 
     c = twint.Config()
     c.Hide_output = True
