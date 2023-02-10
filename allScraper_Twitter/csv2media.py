@@ -9,16 +9,18 @@ def create_folder(image_path):
     if not CHECK_FOLDER:
         os.makedirs(image_path)
 
-target = "scraped1/" # folder containing all csv files
+#target = "scraped1/" # folder containing all csv files
+target = "/mnt/smdata/twitter/VAMoS/"
+
 htags = f"{target}hashtags/"
 imgs = f"{target}images/"
-#read each file and create respective folder
 
-####--------modifyyyy with folders::::
+#read each file and create respective folder
 for file in os.listdir(htags):
-    print(file)
+    #print(file)
     df = pd.read_csv(f"{htags}{file}")
-    folder = file.strip(".csv")
+    folder = file.split(".csv")
+    folder = folder[0]
     create_folder(os.path.join(imgs, folder))
     
     photos = df.photos
