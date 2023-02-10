@@ -1,8 +1,8 @@
 import twint
 
 f = open("all_hashtags.csv", "r") # input file containing list of hashtags
-out_dir = "/mnt/smdata/twitter/VAMoS/" # output directory for the scraped .csv files
-
+#out_dir = "/mnt/smdata/twitter/VAMoS/" # output directory for the scraped .csv files
+out_dir = "scraped/"
 count = 0
 for line in f:
     h = line.strip("#\n")
