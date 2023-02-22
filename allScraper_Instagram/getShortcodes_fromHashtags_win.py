@@ -41,7 +41,6 @@ alert = WebDriverWait(driver, 15).until(EC.element_to_be_clickable((By.XPATH, '/
 alert2 = WebDriverWait(driver, 15).until(EC.element_to_be_clickable((By.XPATH, '//button[contains(text(), "Not Now")]'))).click()
 
 
-
 count = 0
 for line in f:
     h = line.strip("#\n")
@@ -72,8 +71,6 @@ for line in f:
 
     print("[+] Waiting for page to load...")
     time.sleep(25)
-
-
 
     #increase the range to scroll more
     n_scrolls = 1
