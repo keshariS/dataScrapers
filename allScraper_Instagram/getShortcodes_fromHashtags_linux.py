@@ -13,7 +13,7 @@ import time
 import numpy as np
 import pandas as pd
 f = open("test_hashtags.csv", "r") # input file containing list of hashtags
-out_dir = "/mnt/smdata/instagram/post_links/" # output directory for the scraped .csv files
+out_dir = "/mnt/smdata/instagram/scrapedData/post_links/" # output directory for the scraped .csv files
 
 
 options = Options()
