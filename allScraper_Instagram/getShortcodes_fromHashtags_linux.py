@@ -45,18 +45,19 @@ password.send_keys("instagramak@80")
 time.sleep(5)
 #target the login button and click it
 button = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "button[type='submit']"))).click()
-print(f"[+] Logged into Instagram (username: {user})")
+print(f"[+] Logging into Instagram (username: {user})...")
 
 # handle alerts
 time.sleep(5)
 alert = WebDriverWait(driver, 15).until(EC.element_to_be_clickable((By.XPATH, '//button[contains(text(), "Not Now")]'))).click()
+print("[+] Logged in!")
 print("[+] 1st popup clicked")
 time.sleep(5)
 #alert2 = WebDriverWait(driver, 15).until(EC.element_to_be_clickable((By.XPATH, '//button[contains(text(), "Not Now")]'))).click()
 #print("2nd popup clicked")
 
 
-STOP_AT = 1
+STOP_AT = 1 # stop at this number of hashtags
 count = 0
 for line in f:
     h = line.strip("#\n")
