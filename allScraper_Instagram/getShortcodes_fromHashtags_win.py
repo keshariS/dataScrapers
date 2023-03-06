@@ -9,7 +9,7 @@ import numpy as np
 import pandas as pd
 
 f = open("test_hashtags.csv", "r") # input file containing list of hashtags
-out_dir = "post_links/" # output directory for the scraped .csv files
+out_dir = "scrapedData/post_links/" # output directory for the scraped .csv files
 
 
 #specify the path to chromedriver.exe (download and save on your computer)
@@ -40,7 +40,7 @@ time.sleep(5)
 alert = WebDriverWait(driver, 15).until(EC.element_to_be_clickable((By.XPATH, '//button[contains(text(), "Not Now")]'))).click()
 alert2 = WebDriverWait(driver, 15).until(EC.element_to_be_clickable((By.XPATH, '//button[contains(text(), "Not Now")]'))).click()
 
-
+STOPAT = 1000
 count = 0
 for line in f:
     h = line.strip("#\n")
@@ -92,5 +92,7 @@ for line in f:
     print("[+] Writing to csv...")
     df.to_csv(out_file, header = None, index=False)
     print("[-] Done!")
+    if(count==STOPAT):
+        break
 
 driver.close()
