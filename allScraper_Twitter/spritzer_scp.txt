@@ -1,0 +1,3 @@
+scp -i twitter-private.key opc@193.122.142.7:/mnt/store/twitterscrape/scraped_twitter_data20.ndjson /mnt/smdata/twitter/spritzer/
+python3 ndjson2csv.py 20
+python3 data2categories.py 20
