@@ -1,7 +1,7 @@
 # categories of hashtags created:
-cat1 = ['boxmod', 'disposablevapepen', 'ecig', 'ecigar', 'ecigarette', 'pod', 'subohm', 'vapepen', 'vaporizer'] #Electronic cigarette device names and parts
+cat1 = ['boxmod', 'disposablevapepen', 'ecig', 'ecigar', 'ecigarette', 'pod', 'subohm', 'vapepen', 'vaporizer','elfbar', 'geekvape', 'joyetech', 'juul', 'Uwell'] #Electronic cigarette device names, parts and brand types
 cat2 = ['cannabis', 'cbd', 'ejuice', 'eliquid', 'premiumliquid', 'vapejuice', 'vapor']  #Smoking substances
-cat3 = ['geekvapestore', 'geekup', 'geekvapetech', 'geekfam', 'elfbar', 'geekvape', 'joyetech', 'juul', 'smokeshop', 'vapelustion', 'vapetime', 'Uwell', 'Uwelltech', 'TPE23', 'vapeshop', 'vapestore', 'vapewholesale']  #Store names/brand types/slogans/events
+cat3 = ['geekvapestore', 'geekup', 'geekvapetech', 'geekfam', 'smokeshop', 'vapelustion', 'vapetime', 'Uwelltech', 'TPE23', 'vapeshop', 'vapestore', 'vapewholesale']  #Store names, events and promotions
 cat4 = ['cloudchaser', 'vapebabes', 'vapecommunity', 'vapefam', 'vapefriends', 'vapelover', 'vapenation', 'vaper', 'vapers', 'vapesociety', 'vapingcommunity']  #Vape user names
 cat5 = ['vapefun', 'smoke','stopsmokingstartvaping', 'vape', 'vapeallday', 'vapedaily', 'vapeadvocacy', 'vapelife', 'vapelifestyle', 'vapelove', 'vapelyfe', 'vapeon', 'vaping', 'vapestyle', 'vapingsavedmylife']  #Vape adjectives/actions
 cat6 = ['vapeadores', 'vapear','VapearNoEsFumar','vapeo','vapersmexico']  #Spanish words/associated with Mexico
