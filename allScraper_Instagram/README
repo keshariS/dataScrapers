@@ -18,6 +18,7 @@ For Linux instance (OCI) use: getShortcodes_fromHashtags_linux.py (uses selenium
 Either of these codes scrape the links of the posts that are relevant to the corresponding hashtag
 and create csv files under scrapedData/post_links/...
 
+
 usage of scrapedData/scrapeData_fromShortcodes.py:
 Uses the instaloader library : https://instaloader.github.io/module/structures.html
 This is the code to strip shortcodes from csv files in scrapedData/post_links/ folder
@@ -30,5 +31,4 @@ usage of scrapedData/metadata_generator.py:
 This file generates a csv file of metadata:
 ('Name','Date', 'Location','#likes','#comments','caption','hashtags','tagged-users')
 from the posts collected by 'instaloader' library and placed in a folder
-The json files should be extracted and kept in the folder
-"""
+The .json.xz files should be extracted and kept in the folder
