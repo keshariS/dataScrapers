@@ -40,6 +40,8 @@ for file in os.listdir(in_dir):
         p = p.split("https://www.instagram.com/p/")
         shortCode = p[1]
         shortCode = shortCode.strip("/")
-
-        post = Post.from_shortcode(L.context, shortCode)
-        L.download_post(post, target = file_name)
+        try:
+            post = Post.from_shortcode(L.context, shortCode)
+            L.download_post(post, target = file_name)
+        except:
+            continue
