@@ -8,13 +8,13 @@ The use of every python file/python notebook is mentioned in the first line as a
 
 Folders:
 
-<h1 style="color:red;font-size:40px;">classifier/</h1>: contains data used by Prof. Dobbs in their paper. Can be used to replicate results (not completed yet, but the paper pdf is included)
+<h1 style="font-size:30px;">classifier/</h1> contains data used by Prof. Dobbs in their paper. Can be used to replicate results (not completed yet, but the paper pdf is included)
 
-data_16k_tweets/: contains the first iteration done in twitter scraping before the spritzer stream for the VAMoS project (we had scraped 16k tweets for the hashtags)
+<h1 style="font-size:30px;">data_16k_tweets/</h1> contains the first iteration done in twitter scraping before the spritzer stream for the VAMoS project (we had scraped 16k tweets for the hashtags)
 
-misc_codes/: contains python files for scraping data using the twarc 2 API
+<h1 style="font-size:30px;">misc_codes/</h1> contains python files for scraping data using the twarc 2 API
 
-spritzer2categories/: contains code for querying the 465M spritzer stream data aand convert into categories as needed for the VAMoS project
+<h1 style="font-size:30px;">spritzer2categories/</h1> contains code for querying the 465M spritzer stream data aand convert into categories as needed for the VAMoS project
 
-topicModels/: contains the topic modeling results per iteration
+<h1 style="font-size:30px;">topicModels/</h1> contains the topic modeling results per iteration
 
