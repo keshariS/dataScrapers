@@ -1,6 +1,8 @@
 This is the repository for the cigar project done under Prof. Grace Kong (Yale)
 Here is the colab file: https://colab.research.google.com/drive/1i33p_AR0GEnmR98_1M5L1If8DPMLfVds?authuser=2#scrollTo=9-NLnT4CWTiZ
 
+This is a flowchart of how the cigars project was done:
+<img src="https://github.com/keshariS/dataScrapers/blob/main/imageScraper_Reddit/cigar.png" width="480">
 
 
 <a href="https://youtu.be/HubXt90MLfI" target="_blank"><img src="https://i.imgur.com/sG7xxyc.png" title="Clarity Coders YouTube" /></a>
