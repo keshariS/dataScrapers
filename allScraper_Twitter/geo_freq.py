@@ -1,3 +1,5 @@
+#counts the number of times a state/country occurs in the iter5_GEO_cat1.csv file which was created using mordecai geolocation
+
 import pandas as pd
 
 df = pd.read_csv(f"topicModels/iter5_GEO_cat1.csv", engine='python')
