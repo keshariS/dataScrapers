@@ -1,5 +1,5 @@
 This is the repository for the cigar project done under Prof. Grace Kong (Yale)
-Here is the colab file: https://colab.research.google.com/drive/1i33p_AR0GEnmR98_1M5L1If8DPMLfVds?authuser=2#scrollTo=9-NLnT4CWTiZ
+Here is the colab file: https://colab.research.google.com/drive/1i33p_AR0GEnmR98_1M5L1If8DPMLfVds?usp=sharing
 
 This is a flowchart of how the cigars project was done:
 
