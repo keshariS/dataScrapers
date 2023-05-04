@@ -8,7 +8,7 @@ The use of every python file/python notebook is mentioned in the first line as a
 
 Folders:
 
-<h1>classifier/</h1>: contains data used by Prof. Dobbs in their paper. Can be used to replicate results (not completed yet, but the paper pdf is included)
+<h1 style="color:red;font-size:40px;">classifier/</h1>: contains data used by Prof. Dobbs in their paper. Can be used to replicate results (not completed yet, but the paper pdf is included)
 
 data_16k_tweets/: contains the first iteration done in twitter scraping before the spritzer stream for the VAMoS project (we had scraped 16k tweets for the hashtags)
 
