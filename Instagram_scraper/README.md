@@ -27,7 +27,9 @@ It creates folders in scrapedData by hashtag name with all the raw metadata. Ext
 
 
 usage of scrapedData/metadata_generator.py:
->>>python metadata_generator.py <folder name without quotes>
+
+>>> $ python metadata_generator.py '(insert folder name without quotes)'
+  
 This file generates a csv file of metadata:
 ('Name','Date', 'Location','#likes','#comments','caption','hashtags','tagged-users')
 from the posts collected by 'instaloader' library and placed in a folder
