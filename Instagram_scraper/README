@@ -22,7 +22,7 @@ and create csv files under scrapedData/post_links/...
 usage of scrapedData/scrapeData_fromShortcodes.py:
 Uses the instaloader library : https://instaloader.github.io/module/structures.html
 This is the code to strip shortcodes from csv files in scrapedData/post_links/ folder
-It creates folders in scrapedData by hashtag name with all the raw metadata
+It creates folders in scrapedData by hashtag name with all the raw metadata. Extract .json.xz files.
 (Run this in the scraped data folder directly, it will automatically create folders)
 
 
