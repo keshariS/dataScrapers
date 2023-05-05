@@ -1,3 +1,5 @@
+# this code tests whether selenium is working in headless mode
+
 #imports here
 from selenium.webdriver.chrome.options import Options
 from selenium import webdriver
