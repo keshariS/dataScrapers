@@ -1,3 +1,5 @@
+# converts the hashtags from a .txt file to a .csv file for better parsing
+
 import re
 import numpy as np
 import pandas as pd
