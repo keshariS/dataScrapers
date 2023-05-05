@@ -1,5 +1,6 @@
 # Data Scrapers
-This is a collection of several data scrapers for popular websites made as part of the Computational Media Lab at UT  Austin
+This is a collection of several data scrapers for popular websites made as part of the Computational Media Lab at UT Austin
+
 Description of each scraper and how it works is documented in the respective folders.
 
 # Note
