@@ -12,7 +12,9 @@ A new list was created called: 'insta_hashtags.csv'
 
 Navigating the repository:
 
-For windows, use: getShortcodes_fromHashtags_win.py (uses selenium in normal mode)
+For windows, use: getShortcodes_fromHashtags_win.py (uses selenium in normal mode) and uses the chromedriver which should be compatible 
+with the Chrome browser version: check here for relevant version: https://chromedriver.chromium.org/downloads
+
 For Linux instance (OCI) use: getShortcodes_fromHashtags_linux.py (uses selenium in headless mode)
 
 Either of these codes scrape the links of the posts that are relevant to the corresponding hashtag
