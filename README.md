@@ -1,6 +1,6 @@
 # Data Scrapers
-This is a collection of several data scrapers for popular websites forked and modified from several developers.
-Description of each scraper and how it works is documented in the respective folders
+This is a collection of several data scrapers for popular websites made as part of the Computational Media Lab at UT  Austin
+Description of each scraper and how it works is documented in the respective folders.
 
 # Note
 The scrapers (essentially this repository) are hosted on an Oracle Cloud instance (ubuntu@129.213.41.169) which can be accessed via SSH.
