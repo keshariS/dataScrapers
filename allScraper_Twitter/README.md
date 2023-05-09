@@ -1,4 +1,4 @@
-Please see below:
+# To begin with, see dataScrapers/README.md for setting up OCI and accessing data
 
 This is a flowchart of how the project was done:
 
