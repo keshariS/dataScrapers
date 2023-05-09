@@ -13,33 +13,43 @@ Issues:
 
 # Scraping Idea
 
-1. Get shortcodes (essentially links) of the posts that are relevant to the corresponding hashtag and create .csv files under scrapedData/post_links/..
-2. Scrape the actual raw data from the shortcodes using 'instaloader' python library
-3. Organize the raw data into a csv file
+1. Get shortcodes (essentially links) of the posts that are relevant to the corresponding hashtag and create .csv files under scrapedData/00 post_links/..
+    or scrapedData/00 new_post_links.. or any other blank folder (same name of folder must be updated in getShortcodes_fromHashtags_win.py)
+3. Scrape the actual raw data from the shortcodes using 'instaloader' python library
+4. Organize the raw data into a csv file using json library and other python code
 
 Navigating the repository:
 
-# For Windows
+# 1. For Windows
 use: getShortcodes_fromHashtags_win.py (uses selenium in normal mode) and uses the chromedriver which should be compatible 
 with the Chrome browser version: check here for relevant version: https://chromedriver.chromium.org/downloads
 
-# For Linux instance (OCI)
+>>> $ python getShortcodes_fromHashtags_win.py
+
+# 1. For Linux instance (OCI)
 use: getShortcodes_fromHashtags_linux.py (uses selenium in headless mode), no webdriver needed
 
 
-usage of scrapedData/scrapeData_fromShortcodes.py:
+# 2. usage of scrapedData/scrapeData_fromShortcodes.py:
+
+>>> ~/scrapedData $ python scrapeData_fromShortcodes.py
 
 Uses the instaloader library : https://instaloader.github.io/module/structures.html
-This is the code to strip shortcodes from csv files in scrapedData/post_links/ folder
+This is the code to strip shortcodes from csv files in scrapedData/post_links/.. blank folder (same name of folder must be updated in getShortcodes_fromHashtags_win.py)
 It creates folders in scrapedData by hashtag name with all the raw metadata. Extract the .json.xz files in the folder.
 (Run this in the scraped data folder directly, it will automatically create folders)
 
 
-usage of scrapedData/metadata_generator.py:
+# 3. usage of scrapedData/metadata_generator.py:
 
->>> $ python metadata_generator.py '(insert folder name without quotes)'
+>>> ~/scrapedData $ python metadata_generator.py '(insert folder name without quotes)'
   
 This file generates a csv file of metadata:
 ('Name','Date', 'Location','#likes','#comments','caption','hashtags','tagged-users')
 from the posts collected by 'instaloader' library and placed in a folder
 The .json.xz files should be extracted and kept in the folder
+
+
+The scraped data can be found on the CML lab's 4TB drive under the NIH VAMoS/instagram/scrapedData folder.
+
+More iterations of data scraping can be done using the process outlined above (create a blank folder scrapedData/02 post_links/.. folder.
