@@ -29,4 +29,14 @@ This will display the key value something like this: ssh-rsa AAAAB3NzaC.........
 
 >>> ubuntu@smscraper:~/.ssh$ cat authorized_keys
 
-5. Now the new device can access the instance
+5. Now the new device can access the instance (recommended: use VSCode with Remote SSH extension)
+
+
+# WinSCP
+
+Use PuTTy to convert the id_rsa.pub file to .ppk file format
+
+Install WinSCP and use the server 129.213.41.169 with username 'ubuntu', SFTP, port 22.
+Use the .ppk file for authentication on: Advanced > SSH > Authentication > .ppk file
+
+Then all the data can be viewed on /mnt/smdata/ and the instance can be accessed from /home/ubuntu/
