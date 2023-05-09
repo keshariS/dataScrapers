@@ -13,10 +13,10 @@ when run from the OCI instance. (Setting up and accessing the OCI instance and t
 
 2. Similarly iter2_prepro_eng_esp_model.ipynb contains the 2nd iteration of topic modelling with language detectino and geolocation code added.
 
-3/4. iter3_4_enesTopicModel_removedTopics.ipynb contains the 3rd and 4th iteration with removal of irrelevant keywords.
+3. iter3_4_enesTopicModel_removedTopics.ipynb contains the 3rd and 4th iteration with removal of irrelevant keywords.
 
 
-Folders:
+# Folders:
 
 <h1 style="font-size:30px;">classifier/</h1> contains data used by Prof. Dobbs in their paper. Can be used to replicate results (not completed yet, but the paper pdf is included)
 
