@@ -11,7 +11,9 @@ The use of every python file/python notebook is mentioned in the first line as a
 iter1_preprocess_model_save.ipynb contains the first iteration of topic modelling which automatically loads the data and runs some preprocessing
 when run from the OCI instance. (Setting up and accessing the OCI instance and the data it contains can be found in the dataScrapers/README.md file)
 
-Similarly iter2
+Similarly iter1_preprocess_model_save.ipynb contains the 2nd iteration of topic modelling with language detectino and geolocation code added.
+
+iter1_preprocess_model_save.ipynb
 
 
 Folders:
