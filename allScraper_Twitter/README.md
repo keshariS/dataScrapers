@@ -6,6 +6,14 @@ This is a flowchart of how the project was done:
 
 The use of every python file/python notebook is mentioned in the first line as a comment.
 
+# Topic Modelling iterations
+
+iter1_preprocess_model_save.ipynb contains the first iteration of topic modelling which automatically loads the data and runs some preprocessing
+when run from the OCI instance. (Setting up and accessing the OCI instance and the data it contains can be found in the dataScrapers/README.md file)
+
+Similarly iter2
+
+
 Folders:
 
 <h1 style="font-size:30px;">classifier/</h1> contains data used by Prof. Dobbs in their paper. Can be used to replicate results (not completed yet, but the paper pdf is included)
