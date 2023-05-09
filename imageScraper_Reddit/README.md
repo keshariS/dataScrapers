@@ -1,6 +1,10 @@
 This is the repository for the cigar project done under Prof. Grace Kong (Yale)
 Here is the colab file: https://colab.research.google.com/drive/1i33p_AR0GEnmR98_1M5L1If8DPMLfVds?usp=sharing
 
+The colab file above contains all the information required to train the yolov7 model and reproduce the results of the project.
+
+All associated data can be found in the CML lab's archive under NIH VAMoS/reddit/
+
 This is a flowchart of how the cigars project was done:
 
 <img src="https://github.com/keshariS/dataScrapers/blob/main/imageScraper_Reddit/cigar.png" width="480">
