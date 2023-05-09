@@ -8,12 +8,12 @@ The use of every python file/python notebook is mentioned in the first line as a
 
 # Topic Modelling iterations
 
-iter1_preprocess_model_save.ipynb contains the first iteration of topic modelling which automatically loads the data and runs some preprocessing
+1. iter1_preprocess_model_save.ipynb contains the first iteration of topic modelling which automatically loads the data and runs some preprocessing
 when run from the OCI instance. (Setting up and accessing the OCI instance and the data it contains can be found in the dataScrapers/README.md file)
 
-Similarly iter1_preprocess_model_save.ipynb contains the 2nd iteration of topic modelling with language detectino and geolocation code added.
+2. Similarly iter2_prepro_eng_esp_model.ipynb contains the 2nd iteration of topic modelling with language detectino and geolocation code added.
 
-iter1_preprocess_model_save.ipynb
+3/4. iter3_4_enesTopicModel_removedTopics.ipynb contains the 3rd and 4th iteration with removal of irrelevant keywords.
 
 
 Folders:
